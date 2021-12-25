@@ -102,7 +102,7 @@ export default function Home() {
         />
         {
           fileUrl && (
-            <Image className="rounded mt-4" width="350" src={fileUrl} />
+            <Image className="rounded mt-4" width="350" height="300" src={fileUrl} />
           )
         }
         <button onClick={createMarket} className="mt-4 bg-blue-500 text-white rounded p-4 shadow-lg">

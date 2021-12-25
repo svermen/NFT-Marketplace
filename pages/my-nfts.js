@@ -53,8 +53,8 @@ export default function Home() {
         <div className="grid grid-cols-2 gap-4 pt-8">
           {
             nfts.map((nft, i) => (
-              <div key={i} className="border p-4 shadow">
-                <Image src={nft.image} className="rounded" />
+              <div key={i} className="border p-4 shadow max-w-xs">
+                <Image src={nft.image} className="rounded" width="300px" height="250px" />
                 <p className="text-2xl my-4 font-bold">Price paid: {nft.price}</p>
               </div>
             ))
