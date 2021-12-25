@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
       <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded">
         <div className="container flex flex-wrap items-center justify-between mx-auto">
           <a href="#" className="flex">
-            <span class="self-center text-lg font-semibold whitespace-nowrap">Fibbo Marketplace</span>
+            <span className="self-center text-lg font-semibold whitespace-nowrap">Fibbo Marketplace</span>
           </a>
           <div className="hidden w-full md:block md:w-auto">
             <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
