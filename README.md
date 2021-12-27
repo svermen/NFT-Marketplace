@@ -1,6 +1,6 @@
 # Fibbo NFT Marketplace
 
-This is a simple NFT Marketplace.
+This is the NFT Marketplace.
 
 Next, run the development server:
 
