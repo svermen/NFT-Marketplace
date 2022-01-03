@@ -1,9 +1,11 @@
 import { ethers } from 'ethers'
 import { useEffect, useState } from 'react'
+import { useRef } from 'react';
 import web3 from 'web3'
 import axios from 'axios'
 import Web3Modal from "web3modal"
 import Image from 'next/image'
+import Link from 'next/link'
 
 import {
   nftaddress, nftmarketaddress
@@ -64,6 +66,11 @@ export default function Home() {
     loadNFTs()
   }
   
+  const detailsNft = () => {
+  alert(1)
+  }
+  
+  
   if (loaded === 'loaded' && !nfts.length) return (<h1 className="p-20 text-4xl">No NFTs!</h1>)
   return (
     <div className="flex justify-center">
@@ -74,7 +81,11 @@ export default function Home() {
               <div key={i} className="border p-4 shadow max-w-xs">
                 <Image src={nft.image} className="rounded" width="300px" height="250px" />
                 <p className="text-2xl my-4 font-bold">Price: {nft.price} FIB</p>
-                <button className="bg-green-600 text-white py-2 px-12 rounded" onClick={() => buyNft(nft)}>Buy NFT</button>
+                {/* <button className="bg-green-600 text-white py-2 px-12 rounded" onClick={() => buyNft(nft)}>Buy NFT</button> */}
+                <button className="bg-gradient-to-r from-blue-500 via-purple-500 text-white font-bold py-2 px-10 rounded" onClick={() => buyNft(nft)}>Comprar</button>
+                <Link href="/details-item">
+                <button className="bg-gradient-to-r from-blue-500 via-purple-500 text-white font-bold py-2 px-10 rounded" onClick={detailsNft}>Detalle</button>                 
+                </Link>
               </div>
             ))
           }

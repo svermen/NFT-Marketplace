@@ -46,7 +46,8 @@ export default function Home() {
     setLoaded('loaded') 
   }
   if (loaded === 'loaded' && !nfts.length) return (<h1 className="p-20 text-4xl">No NFTs!</h1>)
-  if (loaded === 'not-loaded' && !nfts.length) return (<button onClick={loadNFTs} className="rounded bg-blue-600 py-2 px-12 text-white m-16">Fetch NFTs</button>)
+  // if (loaded === 'not-loaded' && !nfts.length) return (<button onClick={loadNFTs} className="rounded bg-blue-600 py-2 px-12 text-white m-16">Fetch NFTs</button>)
+  if (loaded === 'not-loaded' && !nfts.length) return (<button onClick={loadNFTs} className="rounded bg-gradient-to-r from-blue-500 via-purple-500 py-2 px-12 text-white font-bold m-16">Fetch NFTs</button>)
   return (
     <div className="flex justify-center">
       <div style={{ width: 900 }}>

@@ -105,9 +105,12 @@ export default function Home() {
             <Image className="rounded mt-4" width="350" height="300" src={fileUrl} />
           )
         }
-        <button onClick={createMarket} className="mt-4 bg-blue-500 text-white rounded p-4 shadow-lg">
-          Create NFT
+        <button onClick={createMarket} className="w-full bg-gradient-to-r from-blue-500 via-purple-500 text-white font-bold py-3 px-12 mt-4 rounded">
+          Create Digital Asset
         </button>
+        {/* <button onClick={createMarket} className="mt-4 bg-blue-500 text-white rounded p-4 shadow-lg">
+          Create NFT
+        </button> */}
       </div>
     </div>
   )
